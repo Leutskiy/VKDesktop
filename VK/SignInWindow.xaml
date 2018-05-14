@@ -1,0 +1,46 @@
+﻿<Window x:Class="VK.SignInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VK"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" Background="Transparent">
+    <Grid>
+        <Rectangle RadiusX="8" RadiusY="8" Fill="White"/>
+        <Image Source="pictures/nature/notebook.jpg" Stretch="UniformToFill" Margin="400 0 0 0"/>
+        <Rectangle Width="400" HorizontalAlignment="Right" Opacity="0.9">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#ffffff" Offset="0.992"/>
+                    <GradientStop Color="#FF61B1F3" Offset="0.092" />
+                    <GradientStop Color="#FF67A7D4" Offset="0.586"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <StackPanel Background="#ffffff" Width="350" HorizontalAlignment="Left" Margin="50 0 0 0">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 100 0 0">
+                <Label Content="Login" FontSize="32" Foreground="#707070" FontFamily="Comic Sans MS" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="0,0">
+                    <materialDesign:PackIcon Kind="Account" Foreground="#707070" Height="30" Width="30" VerticalAlignment="Center" Margin="10"/>
+                    <TextBox x:Name="accountBox" materialDesign:HintAssist.Hint="User login or email" Width="150" Margin="10"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0">
+                    <materialDesign:PackIcon Kind="Key" Foreground="#707070" Height="30" Width="30" VerticalAlignment="Center" Margin="10"/>
+                    <PasswordBox x:Name="passwordBox" materialDesign:HintAssist.Hint="Your password" Width="150" Margin="10"></PasswordBox>
+                </StackPanel>
+                <Grid>
+                    <CheckBox Content="Remember me?" Foreground="#FF918D8D" Margin="10,5" IsChecked="False" Background="#FFAEAEAE" FontFamily="Segoe UI Black">
+                        <CheckBox.BorderBrush>
+                            <SolidColorBrush Color="#FFAEAEAE" Opacity="100"/>
+                        </CheckBox.BorderBrush>
+                    </CheckBox>
+                </Grid>
+            </StackPanel>
+            <Button x:Name="SignIn" Content="Sign In" Width="100"  Margin="30 30 0 0" HorizontalAlignment="Left" Background="#FF4B86B8" FontFamily="Segoe UI Emoji" BorderBrush="#FF4B86B8" Click="SignIn_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

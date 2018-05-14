@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\eleut\source\repos\VKDesktop\VK\obj\Debug\
+D:\github\VKDesktop\VK\obj\Debug\
 VK
 none
 false
 DEBUG;TRACE
-C:\Users\eleut\source\repos\VKDesktop\VK\App.xaml
-21553555364
+D:\github\VKDesktop\VK\App.xaml
+3-1081921728
 
-9926133945
-15740375481
-Icons.xaml;MainWindow.xaml;
+131749885997
+84-737650565
+Icons.xaml;MainWindow.xaml;SignInWindow.xaml;
 
-False
+True
 
